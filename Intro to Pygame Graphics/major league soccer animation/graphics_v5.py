@@ -25,7 +25,9 @@ scorefont = pygame.font.SysFont("impact", 20)
 img = pygame.image.load('goalie.png')
 img_b = pygame.image.load('soccer_ball.png')
 
+SEE_THROUGH = pygame.Surface((800, 180))
 SEE_THROUGH.set_alpha(150)
+SEE_THROUGH.fill((124, 118, 135))
 
 def draw_cloud(x, y):
     pygame.draw.ellipse(SEE_THROUGH, cloud_color, [x, y + 8, 10, 10])
