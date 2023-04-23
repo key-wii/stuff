@@ -8,8 +8,9 @@ def run_game(cards, correct, promptHalf1, promptHalf2):
     print("Let's play Flash Cards!")
     right = 0
 
-    # Loop until the player gets the desired amount of consecutive correct answers
+    # Loop until the player gets 7 consecutive words correct.
     while right < correct:
+        # Create a list called spanish (or french) which contains the
         # keys from your vocab dict.
         answerKey = list(cards.keys())
 
