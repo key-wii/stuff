@@ -3,7 +3,6 @@ import pygame
 
 # Window
 SIZE = (800, 600)
-screen = pygame.display.set_mode(SIZE)
 
 # Timer
 clock = pygame.time.Clock()

@@ -16,7 +16,6 @@ def draw_cloud(x, y):
     pygame.draw.rect(SEE_THROUGH, cloud_color, [x + 6, y + 8, 18, 10])
 
 # Window
-SIZE = (800, 600)
 TITLE = "Major League Soccer"
 screen = pygame.display.set_mode(SIZE)
 pygame.display.set_caption(TITLE)
@@ -25,9 +24,7 @@ pygame.display.set_caption(TITLE)
 clock = pygame.time.Clock()
 refresh_rate = 60
 
-SEE_THROUGH = pygame.Surface((800, 180))
 SEE_THROUGH.set_alpha(150)
-SEE_THROUGH.fill((124, 118, 135))
 
 stars = []
 for n in range(200):
