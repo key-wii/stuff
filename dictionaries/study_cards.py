@@ -8,11 +8,9 @@ vocab = {'un' : 'one', 'deux' : 'two', 'trois' : 'three', 'quatre' : 'four',
          'neuf' : 'nine', 'dix' : 'ten', 'onze' : 'eleven', 'douze' : 'tweleve',
          'treize' : 'thirten', 'quatorze' : 'fourteen'}
 
-
 # Start the game.
 print("Let's play Flash Cards!")
 right = 0
-
 
 # Loop until the player gets 7 consecutive words correct.
 while right < 7:
@@ -41,14 +39,8 @@ while right < 7:
         print('nope')
         right = 0
 
-    
-
     # Print the number of consecutive correct answers so far.
     print('you have a streak of ' + str(right) + ' answers.')
 
-
-
-
-          
 # End the game.
 print("Good job. That's 7 correct answers in a row. You win!")
