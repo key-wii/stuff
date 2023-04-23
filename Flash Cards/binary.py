@@ -1,6 +1,6 @@
 from flash_cards import *
 
-# Create a dictionary of 15 Spanish or French words and their English
+# Create a dictionary of ascii numbers and their corresponding meanings
 # translations. Call the dict vocab. 
 cards = {'32' : 'space', '33' : 'exclamation point', '34' : 'double quote',
           '35' : 'number', '36': 'dollar', '37' : 'percent', '38' : 'ampersand',
