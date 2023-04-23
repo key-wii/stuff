@@ -23,12 +23,10 @@ def play():
     print("If my guess is to low then put 'higher' or 'h' if my guess is to high then put 'lower'or 'l' and if i get it right type 'yes' or 'y'")
     print()
     print("Press enter when you have your number.")
-
     input()
 
     got_it = False
     
-
     while got_it == False and tries < limit:
         
         guess = (high + low) //2
@@ -48,7 +46,6 @@ def play():
             
         print("What? Input is invalid, you cheater. please input a proper answer.") 
              
-
         tries += 1
         print()
 
