@@ -3,6 +3,9 @@ import pygame
 
 # Window
 SIZE = (800, 600)
+TITLE = "Major League Soccer"
+screen = pygame.display.set_mode(SIZE)
+pygame.display.set_caption(TITLE)
 
 # Timer
 clock = pygame.time.Clock()
