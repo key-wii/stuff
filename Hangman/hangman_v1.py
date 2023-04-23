@@ -1,8 +1,6 @@
 import random
 from hangman_game import *
 
-show_start_screen()
-
 def show_credits():
     print("by Jordan Houle")
 
