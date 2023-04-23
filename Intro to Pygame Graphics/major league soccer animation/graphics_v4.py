@@ -16,26 +16,14 @@ def draw_cloud(x, y):
     pygame.draw.rect(SEE_THROUGH, cloud_color, [x + 6, y + 8, 18, 10])
 
 # Window
-SIZE = (800, 600)
 TITLE = "Major League Soccer"
-screen = pygame.display.set_mode(SIZE)
 pygame.display.set_caption(TITLE)
-
 
 # Timer
 clock = pygame.time.Clock()
 refresh_rate = 60
 
-DARKNESS = pygame.Surface(SIZE)
-DARKNESS.set_alpha(200)
-DARKNESS.fill((0, 0, 0))
-
-SEE_THROUGH = pygame.Surface((800, 180))
 SEE_THROUGH.set_alpha(150)
-SEE_THROUGH.fill((124, 118, 135))
-
-# Config
-lights_on = True
 
 stars = []
 for n in range(200):
@@ -49,9 +37,6 @@ for i in range(20):
     x = random.randrange(-100, 1600)
     y = random.randrange(0, 150)
     clouds.append([x, y])
-    
-# Game loop
-done = False
 
 while not done:
     # Event processing (React to key presses, mouse clicks, etc.)
@@ -200,10 +185,8 @@ while not done:
     # Update screen (Actually draw the picture in the window.)
     pygame.display.flip()
 
-
     # Limit refresh rate of game loop 
     clock.tick(refresh_rate)
-
 
 # Close window and quit
 pygame.quit()
