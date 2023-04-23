@@ -55,7 +55,6 @@ def play_again():
 
         print("what?!!! Just say yes or no, n or y.")
 
-
 def credit_screen():
     gameOver()
         

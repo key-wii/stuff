@@ -33,18 +33,9 @@ while again == True:
     else:
         print("You r dum")
 
-
     answer = input("Would you like to play again? ")
 
     if answer == 'no':
         again = False
 
 print("Game over")
-
-
-
-
-
-
-
-

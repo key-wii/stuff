@@ -24,17 +24,10 @@ while got_it == False and tries < limit:
 
     tries += 1
 
-
 if got_it == True:
     print("You're a winner!")
 else:
     print("You r dum")
 
-
-
-
 print("Game over")
 play_again = input("Play Again?")
-
-
-
