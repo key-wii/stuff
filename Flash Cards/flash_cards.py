@@ -1,3 +1,5 @@
+#Generic file binary and vocab import from
+
 # Add an import statement here so we can use the random.choice function.
 import random
 
