@@ -17,6 +17,7 @@ def draw_cloud(x, y):
 
 # Window
 TITLE = "Major League Soccer"
+screen = pygame.display.set_mode(SIZE)
 pygame.display.set_caption(TITLE)
 
 # Timer
