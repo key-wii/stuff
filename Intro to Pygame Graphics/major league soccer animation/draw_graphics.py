@@ -29,10 +29,6 @@ ck = (127, 33, 33)
 #config
 day = True
 
-SEE_THROUGH = pygame.Surface((800, 180))
-SEE_THROUGH.set_alpha(150)
-SEE_THROUGH.fill((124, 118, 135))
-
 # Draws a fence on the screen
 def draw_fence(sky_color):
     y = 170

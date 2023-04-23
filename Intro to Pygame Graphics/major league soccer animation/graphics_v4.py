@@ -21,7 +21,6 @@ TITLE = "Major League Soccer"
 screen = pygame.display.set_mode(SIZE)
 pygame.display.set_caption(TITLE)
 
-
 # Timer
 clock = pygame.time.Clock()
 refresh_rate = 60
