@@ -37,6 +37,9 @@ for i in range(20):
     x = random.randrange(-100, 1600)
     y = random.randrange(0, 150)
     clouds.append([x, y])
+    
+# Game loop
+done = False
 
 while not done:
     # Event processing (React to key presses, mouse clicks, etc.)
@@ -185,8 +188,10 @@ while not done:
     # Update screen (Actually draw the picture in the window.)
     pygame.display.flip()
 
+
     # Limit refresh rate of game loop 
     clock.tick(refresh_rate)
+
 
 # Close window and quit
 pygame.quit()
