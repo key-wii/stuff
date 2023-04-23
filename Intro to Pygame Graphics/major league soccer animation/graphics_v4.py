@@ -7,6 +7,16 @@ from draw_graphics import *
 # Initialize game engine
 pygame.init()
 
+# Window
+SIZE = (800, 600)
+TITLE = "Major League Soccer"
+screen = pygame.display.set_mode(SIZE)
+pygame.display.set_caption(TITLE)
+
+SEE_THROUGH = pygame.Surface((800, 180))
+SEE_THROUGH.set_alpha(150)
+SEE_THROUGH.fill((124, 118, 135))
+
 # Draws clouds
 def draw_cloud(x, y):
     pygame.draw.ellipse(SEE_THROUGH, cloud_color, [x, y + 8, 10, 10])
@@ -14,20 +24,6 @@ def draw_cloud(x, y):
     pygame.draw.ellipse(SEE_THROUGH, cloud_color, [x + 10, y, 16, 16])
     pygame.draw.ellipse(SEE_THROUGH, cloud_color, [x + 20, y + 8, 10, 10])
     pygame.draw.rect(SEE_THROUGH, cloud_color, [x + 6, y + 8, 18, 10])
-
-# Window
-SIZE = (800, 600)
-TITLE = "Major League Soccer"
-screen = pygame.display.set_mode(SIZE)
-pygame.display.set_caption(TITLE)
-
-# Timer
-clock = pygame.time.Clock()
-refresh_rate = 60
-
-DARKNESS = pygame.Surface(SIZE)
-DARKNESS.set_alpha(200)
-DARKNESS.fill((0, 0, 0))
 
 stars = []
 for n in range(200):

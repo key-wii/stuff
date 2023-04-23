@@ -26,6 +26,14 @@ BRIGHT_YELLOW = (255, 244, 47)
 NIGHT_GRAY = (104, 98, 115)
 ck = (127, 33, 33)
 
+DARKNESS = pygame.Surface(SIZE)
+DARKNESS.set_alpha(200)
+DARKNESS.fill((0, 0, 0))
+
+# Timer
+clock = pygame.time.Clock()
+refresh_rate = 60
+
 # Config
 lights_on = True
 day = True
