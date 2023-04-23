@@ -8,10 +8,14 @@ from draw_graphics import *
 pygame.init()
 
 # Window
+SIZE = (800, 600)
 TITLE = "Major League Soccer"
+screen = pygame.display.set_mode(SIZE)
 pygame.display.set_caption(TITLE)
 
+SEE_THROUGH = pygame.Surface((800, 180))
 SEE_THROUGH.set_alpha(100)
+SEE_THROUGH.fill((124, 118, 135))
 
 def draw_cloud(x, y):
     pygame.draw.ellipse(SEE_THROUGH, cloud_color, [x, y + 8, 10, 10])

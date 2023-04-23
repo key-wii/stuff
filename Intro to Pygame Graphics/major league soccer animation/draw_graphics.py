@@ -26,7 +26,8 @@ BRIGHT_YELLOW = (255, 244, 47)
 NIGHT_GRAY = (104, 98, 115)
 ck = (127, 33, 33)
 
-#config
+# Config
+lights_on = True
 day = True
 
 # Game loop

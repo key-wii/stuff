@@ -29,13 +29,6 @@ DARKNESS = pygame.Surface(SIZE)
 DARKNESS.set_alpha(200)
 DARKNESS.fill((0, 0, 0))
 
-SEE_THROUGH = pygame.Surface((800, 180))
-SEE_THROUGH.set_alpha(150)
-SEE_THROUGH.fill((124, 118, 135))
-
-# Config
-lights_on = True
-
 stars = []
 for n in range(200):
     x = random.randrange(0, 800)
@@ -48,9 +41,6 @@ for i in range(20):
     x = random.randrange(-100, 1600)
     y = random.randrange(0, 150)
     clouds.append([x, y])
-    
-# Game loop
-done = False
 
 while not done:
     # Event processing (React to key presses, mouse clicks, etc.)

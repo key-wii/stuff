@@ -7,7 +7,9 @@ from draw_graphics import *
 pygame.init()
 
 # Window
+SIZE = (800, 600)
 TITLE = "My Awesome Picture"
+screen = pygame.display.set_mode(SIZE)
 pygame.display.set_caption(TITLE)
 
 while not done:
