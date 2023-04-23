@@ -7,13 +7,6 @@ TITLE = "Major League Soccer"
 screen = pygame.display.set_mode(SIZE)
 pygame.display.set_caption(TITLE)
 
-# Timer
-clock = pygame.time.Clock()
-refresh_rate = 60
-
-# Game loop
-done = False
-
 # Colors
 ''' add colors you use as RGB values here '''
 RED = (255, 0, 0)
@@ -33,28 +26,12 @@ BRIGHT_YELLOW = (255, 244, 47)
 NIGHT_GRAY = (104, 98, 115)
 ck = (127, 33, 33)
 
-# Config
-lights_on = True
+#config
 day = True
 
-DARKNESS = pygame.Surface(SIZE)
-DARKNESS.set_alpha(200)
-DARKNESS.fill((0, 0, 0))
-
 SEE_THROUGH = pygame.Surface((800, 180))
+SEE_THROUGH.set_alpha(150)
 SEE_THROUGH.fill((124, 118, 135))
-
-while not done:
-    # Event processing (React to key presses, mouse clicks, etc.)
-    ''' for now, we'll just check to see if the X is clicked '''
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            done = True
-        elif event.type == pygame.KEYDOWN:
-            if event.key == pygame.K_l:
-                lights_on = not lights_on
-            elif event.key == pygame.K_d:
-                day = not day
 
 # Draws a fence on the screen
 def draw_fence(sky_color):
