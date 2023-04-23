@@ -22,12 +22,10 @@ binary = {'32' : 'space', '33' : 'exclamation point', '34' : 'double quote',
           '109' : 'm', '110' : 'n', '111' : 'o', '112' : 'p', '113' : 'q', '114' : 'r',
           '115' : 's'}
 
-
 # Start the game.
 print("Let's play Flash Cards!")
 right = 0
 correct = 10
-
 
 # Loop until the player gets 7 consecutive words correct.
 while right < correct:
@@ -56,14 +54,8 @@ while right < correct:
         print('nope')
         right = 0
 
-    
-
     # Print the number of consecutive correct answers so far.
     print('you have a streak of ' + str(right) + ' answers.')
 
-
-
-
-          
 # End the game.
 print("Good job. That's " + str(correct) + " correct answers in a row. You win!")
