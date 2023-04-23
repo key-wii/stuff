@@ -29,6 +29,9 @@ ck = (127, 33, 33)
 #config
 day = True
 
+# Game loop
+done = False
+
 # Draws a fence on the screen
 def draw_fence(sky_color):
     y = 170
