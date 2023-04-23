@@ -1,3 +1,5 @@
-# stuff
+# Refractoring "stuff" Folder
 
-# test lmao
+# CS 2520.02 Assignment 6
+
+# Names: Christopher Gomez, Melvin Gitbumrungsin, Allison Ly
