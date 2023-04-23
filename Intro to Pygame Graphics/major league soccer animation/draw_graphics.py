@@ -26,6 +26,7 @@ BRIGHT_YELLOW = (255, 244, 47)
 NIGHT_GRAY = (104, 98, 115)
 ck = (127, 33, 33)
 
+#config
 day = True
 
 SEE_THROUGH = pygame.Surface((800, 180))
