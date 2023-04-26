@@ -51,6 +51,15 @@ day = True
 # Game loop
 done = False
 
+"""
+Refactored Methods:
+- draw_fence()
+- draw_left_lights()
+- draw_right_lights()
+- draw_net()
+- draw_clouds()
+"""
+
 # Draws a fence on the screen
 def draw_fence(sky_color):
     y = 170
