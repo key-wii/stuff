@@ -2,7 +2,7 @@
 
 Names: Christopher Gomez, Melvin Gitbumrungsin, Allison Ly
 
-### [Repository Link](https://github.com/key-wii/stuff)
+### [Repository Link](https://github.com/key-wii/stuff) (CLICK ME!!!)
 
 ## Changes Made:
 - Re-organized folders
