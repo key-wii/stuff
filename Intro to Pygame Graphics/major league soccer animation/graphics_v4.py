@@ -184,6 +184,7 @@ def draw_cloud(x, y):
     pygame.draw.ellipse(SEE_THROUGH, cloud_color, [x + 20, y + 8, 10, 10])
     pygame.draw.rect(SEE_THROUGH, cloud_color, [x + 6, y + 8, 18, 10])
 
+# Set stars at random positions
 stars = []
 for n in range(200):
     x = random.randrange(0, 800)
@@ -191,6 +192,7 @@ for n in range(200):
     r = random.randrange(1, 2)
     stars.append([x, y, r, r])
 
+# Set clouds at random positions
 clouds = []
 for i in range(20):
     x = random.randrange(-100, 1600)
@@ -244,6 +246,7 @@ while not done:
         for s in stars:
             pygame.draw.ellipse(screen, WHITE, s)
 
+    # Draw field grass
     pygame.draw.rect(screen, field_color, [0, 180, 800 , 420])
     pygame.draw.rect(screen, stripe_color, [0, 180, 800, 42])
     pygame.draw.rect(screen, stripe_color, [0, 264, 800, 52])
@@ -253,6 +256,7 @@ while not done:
     '''fence'''
     draw_fence(sky_color)
     
+    # Draw clouds at their respective positions
     for c in clouds:
         draw_cloud(c[0], c[1])
     screen.blit(SEE_THROUGH, (0, 0))   
